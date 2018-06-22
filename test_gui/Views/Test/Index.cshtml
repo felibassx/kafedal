@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+
+    var listaDatosTest = ViewBag.DatosTest;
+    var datoTest = ViewBag.DatosTestPorId;
+
+}
+
+<h2>Index</h2>
+
+<h5>Listado</h5>
+<ul>
+    @foreach (var e in listaDatosTest)
+    {
+        <li>@e.ID - @e.DESCRIPCION</li>
+    }
+</ul>
+
+<br />
+
+<h5>Dato Simple</h5>
+<p>@datoTest.ID - @datoTest.DESCRIPCION</p>
+
+
